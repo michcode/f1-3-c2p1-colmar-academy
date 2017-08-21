@@ -1,0 +1,406 @@
+body{
+  background-color: white;
+  color:black;
+  font-family:Helvetica;
+  line-height: 1.5;
+}
+
+html{
+  font-size:16px;
+}
+/*logo section*/
+.topContainer{
+  height:32px;
+  padding:16px 24px;
+  /*width:0 auto;*/
+  display: flex;
+  justify-content: space-between;
+  background-color: #71bc49;
+}
+
+.logo, .flexBox, nav{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.logo.words{
+  font-weight:bold;
+}
+
+nav ul li{
+  margin-right:16px;
+}
+
+nav ul li:last-child{
+  margin-right:0;
+}
+a{
+  text-decoration:none;
+  list-style: none;
+  color:black;
+}
+
+/*logo section ends*/
+/*banner*/
+.banner{
+  background-color: Gainsboro;
+  display: flex;
+  align-items: center;
+
+}
+.banner-image
+{
+  width:60%;
+  margin:32px 24px;
+
+}
+.banner-image img
+{
+  max-width:100%;
+}
+.banner-image:before{
+  background-color:rgba(255, 128, 0, 0.75);
+}
+.banner-rightTxt{
+  width:40%;
+  margin-top:32px;
+  margin-bottom:32px;
+}
+.banner-right-innerbox{
+  width:60%;
+}
+.banner-rightTxt h1{
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+.banner-rightTxt p{
+  font-size:1.2rem;
+}
+.banner-rightTxt p:last-child{
+  color:white;
+  background-color:grey;
+  text-align:center;
+  padding-top:8px;
+  padding-bottom:8px;
+  transition-property: background-color;
+  transition-duration:250ms;
+}
+.banner-rightTxt p:last-child:hover{
+  background-color:hsl(0,0%,80%);
+}
+.banner a{
+  color:white;
+}
+.banner a:hover{
+  color:#4f4a04;
+  font-weight: bold;
+  box-shadow: 0 0 1em gold;
+}
+/*banner ends*/
+/*information section*/
+.information{
+  display:flex;
+}
+.informationLt{
+  width:60%;
+  margin:2rem 1.5rem;
+}
+.informationRt{
+  width:40%;
+  padding-top:32px;
+  padding-bottom:32px;
+  border-left:1px solid hsl(0,0%,90%);
+}
+.informationLt-img-box{
+  padding-bottom:32px;
+}
+.informationLt img{
+  max-width:100%;
+}
+h2{
+  font-weight:bold;
+  font-size:2rem;
+  margin-bottom: 24px;
+}
+
+h3{
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+/*.information p{
+  color:hsl(0,0%,50%);
+}*/
+.infoBox{
+  display:flex;
+  align-items: center;
+
+}
+.infoRightTxt{
+  max-width:65%;
+  height:auto;
+  padding-top:1rem;
+  padding-right:1rem;
+  padding-bottom:1rem;
+  display:flex;
+  flex-wrap:wrap;
+}
+.infoImage{
+  width:35%;
+  padding:16px;
+}
+.infoImage img{
+  width:100%;
+}
+.infoRightTxt p{
+  margin-bottom:0.5rem;
+  margin-top:0.5rem;
+}
+.information a{
+  color:#0099FF;
+}
+#guestLecture{
+  background-color:hsl(0,0%,90%);
+}
+
+#learning{
+  background-color:hsl(0,0%,90%);
+
+  padding:32px 72px;
+  text-align: center;
+  /*overflow:hidden;*/
+}
+
+.courseBox{
+  display: flex;
+  flex-direction: column;
+  /*width:30%;*/
+  margin-right:32px;
+ opacity: 0.5;
+
+}
+.courseBox img{
+  max-width: 100%;
+
+}
+.courseBox:hover{
+  opacity: 1;
+  box-shadow: 0 0 1em gold;
+}
+.courseTxt{
+  background-color:white;
+  text-align: left;
+  padding-top:16px;
+  padding-bottom: 24px;
+  padding-left:16px;
+  padding-right:16px;
+  display:inline-flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+
+}
+
+.courseTxt p {
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap:wrap;
+}
+.learning.container{
+  display: inline-flex;
+  /*flex-wrap: wrap;*/ /*--- use when it's medium size*/
+
+}
+#learningSecondRow{
+  margin-top:32px;
+}
+
+.thesis{
+  padding-top:32px;
+  padding-bottom:32px;
+  padding-left:24px;
+}
+.thesis h2{
+  text-align: center;
+}
+.thesis-flex-container{
+  display:flex;
+}
+.thesisLtContainer{
+  width:60%;
+}
+.thesisRtContainer{
+  width:40%;
+}
+.thesis-video-box{
+  padding-right:24px;
+  padding-bottom:24px;
+}
+.thesis-video-box video{
+  max-width:100%;
+}
+
+.thesisLtContainer h3{
+  margin-bottom: 0.5rem;
+}
+.thesis-thumbnail-box{
+  padding-top:16px;
+  padding-bottom:16px;
+  padding-left:16px;
+  display:flex;
+  align-items: center;
+}
+.thesis-thumbnail-img{
+  width:35%;
+}
+.thesis-thumbnail-box img{
+  max-width:100%;
+}
+.thesis-thumbnail-txt{
+  width:65%;
+  margin-left:16px;
+}
+.thesis p,
+.courseTxt p,
+.information p{
+  color:hsl(0,0%,50%);
+}
+.thesisRtContainer .thesis-thumbnail-box:first-child{
+  background-color:hsl(0,0%,90%);
+}
+
+footer{
+  padding:16px 24px;
+  border-top:1px solid hsl(0,0%,90%);
+  display:flex;
+  justify-content:space-between;
+  color:hsl(0,0%,50%);
+  background-color: #71bc49;
+  font-size: 0.8rem;
+}
+footer:before{
+
+}
+footer .notes ul{
+  display:flex;
+}
+footer .notes ul li{
+  padding-left:0.5rem;
+}
+
+footer a{
+  color:hsl(0,0%,50%);
+  font-size: 0.8rem;
+}
+
+.mobile{
+  display: none;
+}
+/*rules for mobile screen*/
+@media only screen and (max-width:780px){
+.flexBox,
+  .desktop, .logo,.mobile a span,
+  .courseBox img,
+  .courseTxt p,
+  .courseTxt br,
+  .informationLt,
+  .thesisRtContainer,
+  .thesis-reimagine,
+  .notes{
+    display:none;
+  }
+    .topContainer {
+ /*background-color: blue;*/
+    }
+  .mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+/*.mobile a:hover span{
+  display:block;
+  position:absolute;
+  right:380px;
+  top:40px;
+  color:black;
+  padding:0 5px;
+}*/
+.banner{
+  flex-wrap:wrap;
+}
+.banner-image{
+  width:100%;
+}
+.banner-image{
+  width:100%;
+  margin:0;
+}
+.banner-rightTxt{
+  width:100%;
+  margin:32px 16px;
+}
+.banner-right-innerbox{
+  width:100%;
+}
+.informationRt{
+  width:100%;
+  padding-top:0;
+}
+.infoBox{
+  flex-wrap:wrap;
+}
+.infoImage{
+  width:100%;
+}
+.infoRightTxt{
+  padding-left:1rem;
+  padding-bottom:4rem;
+  flex-direction: column;
+}
+#learning{
+  background-color: white;
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-bottom:1.5rem;/*24px*/
+
+}
+.learning.container{
+  flex-wrap: wrap;
+  width:100%
+}
+.courseTxt{
+  padding-top:0;
+  padding-bottom:0.5rem;
+  padding-left:0;
+  padding-right:0;
+  width:100%;
+
+}
+.courseTxt h3{
+  width:430px;
+  background-color: hsl(0,0%,90%);
+  padding-top:16px;
+  padding-bottom:24px; /*plus .courseTxt padding-bottom 0.5rem(8px) adds up to the total padding of 32px*/
+  padding-left:16px;
+  padding-right:16px;
+  display: block;
+}
+#learningSecondRow{
+  margin-top:0.25rem;;
+}
+.thesisLtContainer{
+  width:100%;
+}
+.thesis{
+  padding-bottom: 0;
+}
+.thesis h2{
+  margin-bottom:1rem;/* =16px*/
+}
+footer{
+  border:0;
+}
+}
